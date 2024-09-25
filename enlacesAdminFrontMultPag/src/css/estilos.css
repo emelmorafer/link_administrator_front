@@ -1,0 +1,240 @@
+
+.headerBlockStyle {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgb(36, 37, 39);
+  border: 2px solid rgb(57, 58, 60);
+}
+
+.listCategoriesBlockStyle {
+  position: fixed;
+  width: 20%;   /*Ancho es el 20% del componente que lo comtiene */
+  height: 100%; /*Ancho es el 100% del componente que lo comtiene */
+  top: 129px;
+  background-color: rgb(36, 37, 39);
+  border: 2px solid rgb(57, 58, 60);
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
+}
+
+.categoryButton {
+  width: 95%;  
+  color: white;
+  border: none; /* Elimina el borde */
+  border-radius: 10px;
+  margin: 3px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal) */
+}
+
+.adminCategoriesButton {
+  display: block;
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px 0px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  background-color: rgb(57, 58, 60);
+  color: white;
+  text-align: center;
+}
+
+.listLinksBlockStyle {
+  position: fixed;
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
+  width: 80%;
+  height: 90%;
+  top: 129px;
+  right: 0;
+  border: 2px solid rgb(57, 58, 60);
+  background-color: rgb(24, 25, 27);   
+}
+
+.categoryInfoBlockStyle {
+  width: 80%;
+  border-radius: 10px;  
+  padding: 20px 10px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  margin: 10px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal) */
+  background-color: rgb(36, 37, 39);
+}
+
+.linkBlockStyle {
+  display: flex; /* Hace que los diversos div queden en forma horizontal */
+  width: 80%;
+  border-radius: 10px; 
+  padding: 10px 10px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  margin: 10px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal)*/
+  background-color: rgb(36, 37, 39);
+}
+
+.editLinkButton {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: rgb(57, 58, 60);
+  color: white;
+}
+
+.iconTextSearch {
+  position : absolute;
+  width: 20px; 
+  height: 20px;  
+  padding-Left: 10px; /* espacio entre el contenido del elemento y su borde izquierdo */
+  padding-Top: 12px;  /* espacio entre el contenido del elemento y su borde superior */
+  z-index: 10;
+}
+
+.inputTextSearch {
+  position: relative;
+  height: 40px;
+  border-radius: 20px;
+  border: none; /* Elimina el borde */
+  padding-Left: 40px; /* espacio entre el contenido del elemento y su borde izquierdo */
+  background-color: rgb(57, 58, 60);
+  color: white;
+  font-Size: 20px;
+}
+
+.createLinkButton {
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgb(39, 55, 78);
+  color: rgb(116, 184, 255);
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.creaEditForm {
+  display: flex; /* Hace que los diversos div queden en forma horizontal */
+  width: 70%;
+  border: 2px solid rgb(57, 58, 60);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15% auto;  /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal)*/  
+  margin-bottom: 10px; /* espacio entre el borde inferior del elemento y otros elementos circundantes */
+  background-color: rgb(36, 37, 39);
+  text-align: center;
+}
+
+.inputform{
+  display: block; 
+  height: 40px;
+  width: 95%;
+  border: none; /* Elimina el borde */
+  border-radius: 20px;
+  padding-Left: 40px; /* espacio entre el contenido del elemento y su borde izquierdo */
+  margin-left: 10px; /* espacio entre el borde izquierdo del elemento y otros elementos circundantes */
+  background-color: rgb(57, 58, 60);
+  color: white;
+  font-Size: 25px;
+  text-align: left;
+}
+
+.buttoncreaEditFormAction {
+  display: inline;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgb(39, 55, 78);
+  color: rgb(116, 184, 255);
+}
+
+.buttoncreaEditFormCancel {
+  display: inline;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgb(57, 58, 60);
+  color: white;
+}
+
+.DeleteModalContent {
+  width: 40%;
+  border: 2px solid rgb(57, 58, 60);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15% auto;  /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal)*/
+  margin-bottom: 10px; 
+  background-color: rgb(36, 37, 39);
+  text-align: center;
+}
+
+.createCategoriesButton {
+  display: inline;
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgb(39, 55, 78); 
+  color: rgb(116, 184, 255); 
+}
+
+.buttonDeleteAction {
+  display: inline;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgb(39, 55, 78);
+  color: rgb(116, 184, 255); 
+}
+
+.buttonDeleteCancel {
+  display: inline;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: rgb(57, 58, 60);
+  color: white;
+}
+
+.inputImageContainer {
+  border: 2px dashed white;
+  border-radius: 10px;
+  background-color: rgb(36, 37, 39);
+  background-repeat: no-repeat;
+  background-size: cover; /* La imagen e fondo cubre todo el espacio */
+  background-position: center;
+}
+
+.inputImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ListLinksModalContent {
+  width: 70%;
+  border: 2px solid rgb(57, 58, 60);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 2% auto;  /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal)*/
+  margin-bottom: 10px; 
+  background-color: rgb(36, 37, 39);
+}
+
+.linkBlockModal {
+  display: flex; /* Hace que los diversos div queden en forma horizontal */
+  width: 95%;
+  border-radius: 10px; 
+  padding: 10px 10px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  margin: 10px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal)*/
+  background-color: rgb(36, 37, 39); 
+  clear: right;  /*El siguiente elemento se moverá hacia abajo, evitando el elemento flotante a la derecha.*/
+}
+
+.imageCloseModal {
+  float: right; /*Este estilo desplaza un elemento hacia la derecha de su contenedor.*/
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
