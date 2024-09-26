@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { API_BASE_URL } from '../../config/config';
 
 export default function CategoryRow({categoryProp,handleClickEditCategoryProp,handleClickDeleteCategoryProp,handleClickListLinksCategoryProp}){
 
@@ -9,7 +10,7 @@ export default function CategoryRow({categoryProp,handleClickEditCategoryProp,ha
 
     const fetchData = async () => {
         try {
-            const response = await fetch("http://localhost:8080/adminEnlaces/enlace/list/categoria/" + id, {
+            const response = await fetch(API_BASE_URL + "/adminEnlaces/enlace/list/categoria/" + id, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

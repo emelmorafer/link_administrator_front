@@ -1,3 +1,5 @@
+import { API_BASE_URL } from '../../config/config';
+
 export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDeleteLinkProp}){
 
     const {id,nombre,descripcion,enlace} = enlaceProp
@@ -7,7 +9,7 @@ export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDe
             <div className="linkBlockStyle">
 
                 <a href={enlace} target="_blank" style={{padding: '10px 20px', width: '15%'}}>
-                    <img src={"http://localhost:8080/images/logoLink_" + id + ".jpeg"} alt="Logo" style={{ cursor: 'pointer' }}/>
+                    <img src={API_BASE_URL + "/images/logoLink_" + id + ".jpeg"} alt="Logo" style={{ cursor: 'pointer' }}/>
                 </a>
 
                 <div style={{color: 'white', padding: '10px 20px', width: '70%'}}>
