@@ -26,7 +26,7 @@ function LeftBlock({setShowModalProp,setIsEditFormProp,setSearchWordProp,setObje
             </button>
 
             <div style={{margin: '15px auto'}}>
-                <img className="iconTextSearch" src="src/images/lupa.png" />
+                <img className="iconTextSearch" src="public/images/lupa.png" />
                 <input className="inputTextSearch" type="text" placeholder="Search..."
                     value={searchWordInput}
                     onChange={(e) => setSearchWordInput(e.target.value)}

@@ -27,7 +27,7 @@ function FormLinkModal({objectLinkProp,setUpdateListLinkProp,isEditFormProp,
             setBackgroundImage(API_BASE_URL + "/images/logoLink_" + objectLinkProp.id + ".jpeg")
             setNameButtonForm("Update")
         }else{
-            setBackgroundImage("src/images/add.png")
+            setBackgroundImage("public/images/add.png")
             setNameButtonForm("Create")          
         }
     }, [objectLinkProp]);
@@ -88,12 +88,12 @@ function FormLinkModal({objectLinkProp,setUpdateListLinkProp,isEditFormProp,
 
     const closeFormModal = () => {
         setShowCreaEditModalProp(false);
-        setBackgroundImage("src/images/add.png");
+        setBackgroundImage("public/images/add.png");
         setError('');
     }; 
 
 
-    const [backgroundImage, setBackgroundImage] = useState("src/images/add.png");
+    const [backgroundImage, setBackgroundImage] = useState("public/images/add.png");
 
     const handleImage = (e) => {
         const { name, value, files } = e.target;

@@ -44,12 +44,12 @@ export default function CategoryRow({categoryProp,handleClickEditCategoryProp,ha
 
                 <div style={{ padding: '10px 20px',width: '20%'}}>
                     <button className='editLinkButton' onClick={() => handleClickEditCategoryProp(id)}>
-                        <img src="src/images/edit.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Edit
+                        <img src="public/images/edit.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Edit
                     </button>
                     <br/>
                     <button className='editLinkButton' onClick={() => handleClickDeleteCategoryProp(id)}
                         style={{display: linksRelated ? 'none' : 'inline-block'}}>
-                        <img src="src/images/delete.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Delete
+                        <img src="public/images/delete.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Delete
                     </button>
                     <button className='editLinkButton' onClick={() => handleClickListLinksCategoryProp(id)}
                         style={{display: linksRelated ? 'inline-block' : 'none'}}>List of Links
