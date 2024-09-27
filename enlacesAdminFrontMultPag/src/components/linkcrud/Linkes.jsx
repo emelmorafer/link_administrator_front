@@ -21,11 +21,11 @@ export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDe
 
                 <div style={{padding: '10px 20px', width: '15%'}}>
                     <button className='editLinkButton' onClick={() => handleClickEditLinkProp(id)}>
-                        <img src="public/images/edit.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Edit
+                        <img src="/images/edit.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Edit
                     </button>
                     <br/>
                     <button className='editLinkButton' onClick={() => handleClickDeleteLinkProp(id)}>
-                        <img src="public/images/delete.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Delete
+                        <img src="/images/delete.png" style={{width: '20px', height: '20px', marginRight: '10px'}}/>Delete
                     </button>
                 </div>    
 

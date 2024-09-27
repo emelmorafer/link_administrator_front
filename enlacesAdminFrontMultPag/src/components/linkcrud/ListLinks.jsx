@@ -42,7 +42,7 @@ function ListLinks({listEnlacesProp,categorySelectedProp,setLinkIdFormProp,setSh
                 </div>  
                 <div style={{margin: 'auto', width: '90%', display: 'flex', justifyContent: 'space-between'}}>
                     <div style={{width: '30%'}} >
-                        <img className="iconTextSearch" src="public/images/lupa.png" />
+                        <img className="iconTextSearch" src="/images/lupa.png" />
                         <input className="inputTextSearch" type="text" placeholder="Search..."
                             value={searchWordInput}
                             onChange={(e) => setSearchWordInput(e.target.value)}

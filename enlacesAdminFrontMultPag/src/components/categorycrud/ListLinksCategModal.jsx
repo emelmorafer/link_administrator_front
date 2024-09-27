@@ -32,7 +32,7 @@ function ListLinksCategModal({showListLinksModalProp,setShowListLinksModalProp,c
     return(
         <div className="modal" style={{display: showListLinksModalProp ? 'block' : 'none'}}>
             <div className="ListLinksModalContent"> 
-                <img src={"public/images/close.png"} alt="Close" onClick={() => closeDeleteModal()} className="imageCloseModal" />
+                <img src={"/images/close.png"} alt="Close" onClick={() => closeDeleteModal()} className="imageCloseModal" />
 
                 {listEnlaces.map((enlace) => (
                     <LinkesModal key={enlace.id} enlaceProp={enlace} />
