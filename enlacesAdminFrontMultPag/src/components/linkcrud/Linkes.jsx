@@ -9,7 +9,7 @@ export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDe
             <div className="linkBlockStyle">
 
                 <a href={enlace} target="_blank" style={{padding: '10px 20px', width: '15%'}}>
-                    <img src={API_BASE_URL + "/images/logoLink_" + id + ".jpeg"} alt="Logo" style={{ cursor: 'pointer' }}/>
+                    <img src={API_BASE_URL + "/images/logoLink_" + id + ".jpeg"} alt="Logo" className='imageBanner'/>
                 </a>
 
                 <div style={{color: 'white', padding: '10px 20px', width: '70%'}}>
