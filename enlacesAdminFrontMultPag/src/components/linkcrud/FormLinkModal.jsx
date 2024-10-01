@@ -14,7 +14,10 @@ function FormLinkModal({objectLinkProp,setUpdateListLinkProp,isEditFormProp,
 
     const [nameButtonForm, setNameButtonForm] = useState('');
     const [error, setError] = useState('');
- 
+
+    // Create a cache-busting parameter
+    const cacheBuster = new Date().getTime();
+
     useEffect(() => {
         setIdForm(objectLinkProp.id)
         setNombreForm(objectLinkProp.nombre)
@@ -24,7 +27,7 @@ function FormLinkModal({objectLinkProp,setUpdateListLinkProp,isEditFormProp,
         setError('');
 
         if(isEditFormProp){           
-            setBackgroundImage(API_BASE_URL + "/images/logoLink_" + objectLinkProp.id + ".jpeg")
+            setBackgroundImage(`${API_BASE_URL}/images/logoLink_${objectLinkProp.id}.jpeg?${cacheBuster}`)
             setNameButtonForm("Update")
         }else{
             setBackgroundImage("/images/add.png")
@@ -96,17 +99,27 @@ function FormLinkModal({objectLinkProp,setUpdateListLinkProp,isEditFormProp,
     const [backgroundImage, setBackgroundImage] = useState("/images/add.png");
 
     const handleImage = (e) => {
-        const { name, value, files } = e.target;
-        setImageForm(files[0]);
-
+        const { name, value, files } = e.target;       
+        const fileImage = files[0];
+        
+        if (!fileImage.name.endsWith('.jpeg') && !fileImage.name.endsWith('.jpg')) {
+            setError('Only .jpeg files are allowed.');
+            return;
+        }
+        if (fileImage.size > 1048576) { // 1MB in bytes
+            setError('File size must be less than 1MB.');
+            return;
+        }
+        setImageForm(fileImage);
         const reader = new FileReader();
-        reader.onload = (ee) => {
-            setBackgroundImage(ee.target.result);
+        reader.onload = (imageLoaded) => {
+            setBackgroundImage(imageLoaded.target.result);
         };
-        reader.readAsDataURL(files[0]);
+        reader.readAsDataURL(fileImage);
+        setError('');
     };
 
-
+    
     return(
         <div className="modal" style={{display: showCreaEditModalProp ? 'block' : 'none'}}>             
             <form class="creaEditForm" onSubmit={handleSubmit}>

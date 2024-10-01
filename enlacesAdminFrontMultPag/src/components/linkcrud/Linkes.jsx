@@ -4,12 +4,15 @@ export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDe
 
     const {id,nombre,descripcion,enlace} = enlaceProp
 
+    // Create a cache-busting parameter
+    const cacheBuster = new Date().getTime();
+
     return(
         <>
             <div className="linkBlockStyle">
 
                 <a href={enlace} target="_blank" style={{padding: '10px 20px', width: '15%'}}>
-                    <img src={API_BASE_URL + "/images/logoLink_" + id + ".jpeg"} alt="Logo" className='imageBanner'/>
+                    <img alt="Logo" className='imageBanner' src={`${API_BASE_URL}/images/logoLink_${id}.jpeg?${cacheBuster}`}/>
                 </a>
 
                 <div style={{color: 'white', padding: '10px 20px', width: '70%'}}>
