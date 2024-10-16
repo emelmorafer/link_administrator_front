@@ -35,7 +35,7 @@ export default function CategoryRow({categoryProp,handleClickEditCategoryProp,ha
             <div className="linkBlockStyle">
 
                 <div style={{color: 'white', padding: '10px 20px', width: '80%'}}>
-                    <a className='textoLink' >
+                    <a className='cartTittleText'>
                         {nombre}
                     </a>
                     <p>{descripcion}</p> 

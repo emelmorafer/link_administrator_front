@@ -2,9 +2,22 @@
 .headerBlockStyle {
   position: fixed;
   width: 100%;
+  height: 128px;
   top: 0px;
   background-color: rgb(36, 37, 39);
   border: 2px solid rgb(57, 58, 60);
+  display: flex;
+  align-items: center;    
+}
+
+.headerText {
+  color: white;
+  font-size: 36px;
+  margin-left: 10px
+}
+
+.cartTittleText {
+  font-size: 22px;
 }
 
 .listCategoriesBlockStyle {
@@ -18,21 +31,33 @@
 }
 
 .categoryButton {
-  width: 95%;  
+  width: calc(100% - 20px); 
   color: white;
   border: none; /* Elimina el borde */
   border-radius: 10px;
-  margin: 3px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal) */
+  margin: 3px 10px; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal) */
 }
 
 .adminCategoriesButton {
   display: block;
-  width: 95%;
   border-radius: 10px;
   padding: 10px 0px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  margin: 0px 10px;
   background-color: rgb(57, 58, 60);
   color: white;
   text-align: center;
+  outline: none; /* Elimina cualquier borde predeterminado */
+  border: 1px solid transparent; /* Borde invisible por defecto */
+  transition: border-color 0.3s ease; /* Transición suave */
+}
+
+.adminCategoriesButton:focus {
+  border-color: rgb(100, 108, 255);
+}
+
+/* Para agregar un efecto al pasar el mouse (hover) */
+.adminCategoriesButton:hover {
+  border-color: rgb(100, 108, 255);
 }
 
 .listLinksBlockStyle {
@@ -41,7 +66,7 @@
   width: 80%;
   height: 90%;
   top: 129px;
-  right: 0;
+  left: 20%;
   border: 2px solid rgb(57, 58, 60);
   background-color: rgb(24, 25, 27);   
 }
@@ -49,7 +74,7 @@
 .categoryInfoBlockStyle {
   width: 80%;
   border-radius: 10px;  
-  padding: 20px 10px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  padding: 20px 30px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
   margin: 10px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal) */
   background-color: rgb(36, 37, 39);
 }
@@ -58,7 +83,7 @@
   display: flex; /* Hace que los diversos div queden en forma horizontal */
   width: 80%;
   border-radius: 10px; 
-  padding: 10px 10px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
+  padding: 10px 30px; /* espacio entre el contenido del elemento y su borde (vertical)(horizontal) */
   margin: 10px auto; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal)*/
   background-color: rgb(36, 37, 39);
 }
@@ -90,6 +115,12 @@
   background-color: rgb(57, 58, 60);
   color: white;
   font-Size: 20px;
+  width: calc(100% - 40px); 
+}
+
+.inputTextSearch::placeholder {
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .createLinkButton {
@@ -168,9 +199,10 @@
 
 .createCategoriesButton {
   display: inline;
-  width: 95%;
+  width: calc(100% - 20px);
   border-radius: 10px;
   padding: 10px 0px;
+  margin: 0px 10px;
   background-color: rgb(39, 55, 78); 
   color: rgb(116, 184, 255); 
 }

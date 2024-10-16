@@ -36,11 +36,11 @@ function ListLinks({listEnlacesProp,categorySelectedProp,setLinkIdFormProp,setSh
         
         <div className="listLinksBlockStyle">
             <div className="categoryInfoBlockStyle">
-                <div style={{margin: 'auto', width: '90%', color: 'white'}}>
-                    <h2 style={{textAlign: 'center'}}>{nombre}</h2>
+                <div style={{width: '100%', color: 'white'}}>
+                    <h1 style={{textAlign: 'center', fontSize: '28px'}}>{nombre}</h1>
                     <p style={{margin: '30px auto'}}>{descripcion}</p> 
                 </div>  
-                <div style={{margin: 'auto', width: '90%', display: 'flex', justifyContent: 'space-between'}}>
+                <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
                     <div style={{width: '30%'}} >
                         <img className="iconTextSearch" src="/images/lupa.png" />
                         <input className="inputTextSearch" type="text" placeholder="Search..."
@@ -49,7 +49,7 @@ function ListLinks({listEnlacesProp,categorySelectedProp,setLinkIdFormProp,setSh
                             onKeyDown={handleKeyDown}
                         />
                     </div>
-                    <button className="createLinkButton" style={{width: '20%'}} onClick={() => addNewLink()}>Create link</button> 
+                    <button className="createLinkButton" style={{width: '15%'}} onClick={() => addNewLink()}>Create link</button> 
                 </div> 
             </div>
 

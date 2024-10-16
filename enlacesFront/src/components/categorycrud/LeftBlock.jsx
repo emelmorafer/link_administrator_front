@@ -25,7 +25,7 @@ function LeftBlock({setShowModalProp,setIsEditFormProp,setSearchWordProp,setObje
                 Create Category
             </button>
 
-            <div style={{margin: '15px auto'}}>
+            <div style={{margin: '15px 10px'}}>
                 <img className="iconTextSearch" src="/images/lupa.png" />
                 <input className="inputTextSearch" type="text" placeholder="Search..."
                     value={searchWordInput}

@@ -2,7 +2,7 @@ function Header({textHeaderProp}){
     
     return (
         <div className="headerBlockStyle">
-            <h1 style={{color: 'white'}}>{textHeaderProp}</h1>
+            <h1 className="headerText">{textHeaderProp}</h1>
         </div>
     )
 }

@@ -52,11 +52,11 @@ function ListTabs({setIdCategorySelectedProp}){
      
     return(
         <div className="listCategoriesBlockStyle">
-            <h2 style={{color: 'white'}}>Categories</h2>
+            <h2 style={{color: 'white', marginLeft: '10px', fontSize: '28px'}}>Categories</h2>
             
             <Link to="/admincategories" className="adminCategoriesButton">Admin Categories</Link>
 
-            <div style={{margin: '15px auto'}}>
+            <div style={{margin: '15px 10px'}}>
                 <img className="iconTextSearch" src="/images/lupa.png" />
                 <input className="inputTextSearch" type="text" placeholder="Search..."
                     value={searchWordInput}
