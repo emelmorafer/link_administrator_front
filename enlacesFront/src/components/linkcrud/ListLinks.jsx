@@ -38,7 +38,7 @@ function ListLinks({listEnlacesProp,categorySelectedProp,setLinkIdFormProp,setSh
             <div className="categoryInfoBlockStyle">
                 <div style={{width: '100%', color: 'white'}}>
                     <h1 style={{textAlign: 'center', fontSize: '28px'}}>{nombre}</h1>
-                    <p style={{margin: '30px auto'}}>{descripcion}</p> 
+                    <p style={{margin: '30px auto'}} className="descripText">{descripcion}</p> 
                 </div>  
                 <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
                     <div style={{width: '30%'}} >

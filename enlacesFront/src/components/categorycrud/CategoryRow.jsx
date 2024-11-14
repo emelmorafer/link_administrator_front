@@ -38,8 +38,8 @@ export default function CategoryRow({categoryProp,handleClickEditCategoryProp,ha
                     <a className='cartTittleText'>
                         {nombre}
                     </a>
-                    <p>{descripcion}</p> 
-                    <p>{creationdate}</p>
+                    <p className='descripText'>{descripcion}</p> 
+                    <p className='descripText'>{creationdate}</p>
                 </div>  
 
                 <div style={{ padding: '10px 20px',width: '20%'}}>

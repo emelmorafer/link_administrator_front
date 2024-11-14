@@ -17,7 +17,7 @@
 }
 
 .cartTittleText {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .listCategoriesBlockStyle {
@@ -36,6 +36,7 @@
   border: none; /* Elimina el borde */
   border-radius: 10px;
   margin: 3px 10px; /* espacio entre el borde del elemento y otros elementos circundantes (vertical)(horizontal) */
+  font-size: 16px;
 }
 
 .adminCategoriesButton {
@@ -46,6 +47,7 @@
   background-color: rgb(57, 58, 60);
   color: white;
   text-align: center;
+  font-size: 20px;
   outline: none; /* Elimina cualquier borde predeterminado */
   border: 1px solid transparent; /* Borde invisible por defecto */
   transition: border-color 0.3s ease; /* Transición suave */
@@ -58,6 +60,10 @@
 /* Para agregar un efecto al pasar el mouse (hover) */
 .adminCategoriesButton:hover {
   border-color: rgb(100, 108, 255);
+}
+
+.descripText {
+  font-size: 16px;
 }
 
 .listLinksBlockStyle {
@@ -95,6 +101,7 @@
   padding: 10px 30px;
   background-color: rgb(57, 58, 60);
   color: white;
+  font-size: 20px;
 }
 
 .iconTextSearch {
@@ -119,7 +126,7 @@
 }
 
 .inputTextSearch::placeholder {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -129,6 +136,7 @@
   background-color: rgb(39, 55, 78);
   color: rgb(116, 184, 255);
   text-align: center;
+  font-size: 20px;
 }
 
 .modal {
@@ -175,6 +183,7 @@
   padding: 10px 0px;
   background-color: rgb(39, 55, 78);
   color: rgb(116, 184, 255);
+  font-size: 20px;
 }
 
 .buttoncreaEditFormCancel {
@@ -184,6 +193,7 @@
   padding: 10px 0px;
   background-color: rgb(57, 58, 60);
   color: white;
+  font-size: 20px;
 }
 
 .DeleteModalContent {
@@ -205,6 +215,11 @@
   margin: 0px 10px;
   background-color: rgb(39, 55, 78); 
   color: rgb(116, 184, 255); 
+  font-size: 20px;
+}
+
+.deleteModalText {
+  font-size: 20px;
 }
 
 .buttonDeleteAction {
@@ -214,6 +229,7 @@
   padding: 10px 0px;
   background-color: rgb(39, 55, 78);
   color: rgb(116, 184, 255); 
+  font-size: 20px;
 }
 
 .buttonDeleteCancel {
@@ -223,6 +239,7 @@
   padding: 10px 0px;
   background-color: rgb(57, 58, 60);
   color: white;
+  font-size: 20px;
 }
 
 .inputImageContainer {

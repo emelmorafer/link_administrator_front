@@ -1,3 +1,4 @@
+import React from 'react';
 import { API_BASE_URL } from '../../config/config';
 
 export default function LinkesModal({enlaceProp}){
@@ -16,10 +17,10 @@ export default function LinkesModal({enlaceProp}){
                 </a>
 
                 <div style={{color: 'white', padding: '10px 20px', width: '80%'}}>
-                    <a href={enlace} target="_blank" className='textoLink' >
+                    <a href={enlace} target="_blank" className='cartTittleText' >
                         {nombre}
                     </a>
-                    <p>{descripcion}</p> 
+                    <p className='descripText'>{descripcion}</p> 
                 </div>    
 
             </div>

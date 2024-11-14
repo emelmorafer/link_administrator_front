@@ -16,7 +16,7 @@ function DeleteLinkModal({showDeleteModalProp,setShowDeleteModalProp,setDeleteLi
             <div className="DeleteModalContent"> 
 
                 <div style={{margin: 'auto', width: '90%', color: 'white'}}>
-                    <h3>Are you sure you want to remove this link?</h3>  
+                    <h3 className="deleteModalText">Are you sure you want to remove this link?</h3>  
                 </div> 
                 <br/>
 

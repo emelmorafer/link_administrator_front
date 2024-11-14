@@ -1,3 +1,4 @@
+import React from 'react';
 import { API_BASE_URL } from '../../config/config';
 
 export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDeleteLinkProp}){
@@ -19,7 +20,7 @@ export default function Linkes({enlaceProp,handleClickEditLinkProp,handleClickDe
                     <a href={enlace} target="_blank" className='cartTittleText'>
                         {nombre}
                     </a>
-                    <p>{descripcion}</p> 
+                    <p className="descripText">{descripcion}</p> 
                 </div>  
 
                 <div style={{padding: '10px 0px', width: '15%'}}>
